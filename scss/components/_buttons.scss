@@ -1,0 +1,13 @@
+.btn {
+	&--submit {
+		font-size: 1.25rem;
+		line-height: 1.4;
+		font-weight: 700;
+		text-align: center;
+		padding-block: 1.1563rem;
+		background: var(--color-white);
+		padding-inline: 2.125rem; /* 34/16 */
+		border-radius: 3.125rem;
+		min-inline-size: 10.125rem; /* 162/16 */
+	}
+}

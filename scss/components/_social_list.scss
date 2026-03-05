@@ -1,0 +1,15 @@
+.social-list {
+	display: flex;
+	column-gap: 1rem; /* 16/16 */
+	row-gap: 0.5rem; /* 8/16 */
+	flex-wrap: wrap;
+	font-size: 1.3125rem; /* 21/16 */
+	@media (any-hover: hover) {
+		a {
+			transition: color 0.3s;
+		}
+		a:hover {
+			color: var(--color-blue-30);
+		}
+	}
+}

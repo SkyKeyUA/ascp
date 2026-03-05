@@ -1,0 +1,81 @@
+@media (max-width: 991.98px) {
+	.menu-open body {
+		overflow: hidden;
+	}
+
+	.icon-menu {
+		justify-self: end;
+		display: flex;
+		flex-basis: 1.875rem;
+		inline-size: 1.875rem;
+		flex-shrink: 0;
+		flex-direction: column;
+	}
+	.icon-menu::before,
+	.icon-menu::after {
+		content: "";
+		block-size: 0.25rem;
+		inline-size: 100%;
+		background-color: var(--color-purple-80);
+		transition: transform 0.3s ease;
+	}
+	.icon-menu span {
+		block-size: 0.25rem;
+		inline-size: 100%;
+		background-color: var(--color-purple-80);
+		margin-block: 0.3125rem;
+		transition:
+			inline-size 0.3s ease,
+			margin-block 0.3s ease,
+			block-size 0.3s ease;
+		align-self: flex-end;
+	}
+
+	.header__container {
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+
+	.navigation {
+		position: fixed;
+		inset-block-start: 0;
+		inset-inline-start: 100%;
+		inline-size: 100%;
+		background-color: var(--color-white);
+		transition: left 0.3s ease;
+	}
+	.navigation {
+		block-size: 100%;
+		padding-block: 1.25rem 2.5rem;
+		padding-inline: 1rem; /* 16/16 */
+		overflow-y: auto;
+	}
+	.menu-open .navigation {
+		inset-inline-start: 0;
+	}
+	button.close-menu {
+		position: relative;
+		inline-size: 1.875rem;
+		block-size: 1.875rem;
+		background: transparent;
+		border: none;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	.close-menu::before,
+	.close-menu::after {
+		content: "";
+		position: absolute;
+		inset-inline-start: 0;
+		inset-block-start: 0.75rem;
+		block-size: 0.25rem;
+		inline-size: 100%;
+		background-color: var(--color-purple-80);
+	}
+	.close-menu::before {
+		transform: rotate(-45deg);
+	}
+	.close-menu::after {
+		transform: rotate(45deg);
+	}
+}

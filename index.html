@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Esthetician Association | Associated Skin Care Professionals</title>
+	<meta name="description"
+		content="Associated Skin Care Professionals is the leading membership association for estheticians providing liability insurance, education, & career support. Join now!">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo logo logo--contain">
+					<a aria-label="Go to ASCP Website" href="index.html">
+						<picture>
+							<source media="(min-width: 479.98px)" srcset="img/logo.png">
+							<source media="(max-width: 479.98px)" srcset="img/logo-mobile.png">
+							<img src="img/logo.png" alt="ASCP logo">
+						</picture>
+					</a>
+				</div>
+				<div class="header__navigation navigation">
+					<div class="navigation__actions actions actions--tablet">
+						<a href="/members" class="actions__log-in log-in">Login</a>
+						<button type="button" aria-label="close menu" class="actions__close close-menu"></button>
+					</div>
+					<nav class="navigation__menu menu">
+						<ul class="menu__list">
+							<li class="menu__has-submenu">
+								<button type="button" class="menu__dropdown" aria-label="open/close submenu">Membership</button>
+								<ul class="menu__submenu submenu">
+									<li><a href="/">Professionals</a></li>
+									<li><a href="/students">Students</a></li>
+									<li><a href="/educators">Educators</a></li>
+									<li><a href="/employers">Employers</a></li>
+								</ul>
+							</li>
+							<li class="menu__has-submenu">
+								<button type="button" class="menu__dropdown" aria-label="open/close submenu">Liability
+									Insurance</button>
+								<ul class="menu__submenu submenu">
+									<li><a href="/liability-insurance-estheticians">Esthetician Insurance</a></li>
+									<li><a href="/ami">Advanced Esthetician Insurance</a></li>
+									<li><a href="/microblading-insurance">Microblading Insurance</a></li>
+									<li><a href="/bpp-optional-contents-coverage-your-business">Business Personal Property
+											Insurance</a></li>
+								</ul>
+							</li>
+							<li class="menu__has-submenu">
+								<button type="button" class="menu__dropdown" aria-label="open/close submenu">Media</button>
+								<ul class="menu__submenu submenu">
+									<li><a href="/ascp-skin-deep-magazine">Skin Deep Magazine</a></li>
+									<li><a href="/podcasts">Esty Talk Podcast</a></li>
+									<li><a href="/updates/blog-posts">ASCP Blog</a></li>
+								</ul>
+							</li>
+							<li class="menu__has-submenu">
+								<button type="button" class="menu__dropdown" aria-label="open/close submenu">Education</button>
+								<ul class="menu__submenu submenu">
+									<li><a href="/industry-education">Skin Care Videos</a></li>
+									<li><a href="/skinpro">ASCP SkinPro</a></li>
+									<li><a href="/ascp-school-forum">ASCP Skin Care School Forum</a></li>
+									<li><a href="/trade-shows-and-events">Tradeshows & Events</a></li>
+									<li><a href="/summit">ASCP Education Summit</a></li>
+								</ul>
+							</li>
+							<li class="menu__has-submenu">
+								<button type="button" class="menu__dropdown" aria-label="open/close submenu">Resources</button>
+								<ul class="menu__submenu submenu">
+									<li><a href="/pocketsuite">Free Online Scheduling</a></li>
+									<li><a href="/career-toolkits">Spa Business Planning Tools</a></li>
+									<li><a href="https://jobs.ascpskincare.com/">ASCP Career Center</a></li>
+									<li><a href="/students/schools">Esthetician Schools</a></li>
+									<li><a href="/members/networking/state-board-info" target="_blank">Cosmetology State
+											Requirements</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions actions actions--desktop">
+					<a href="/members" class="actions__log-in log-in">Login</a>
+				</div>
+				<button type="button" aria-label="open menu" class="header__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="main">
+			<section class="main__home-hero home-hero">
+				<div class="home-hero__container">
+					<div class="home-hero__image home-hero__image--contain home-hero__image--left">
+						<img src="img/home/hero/1.png" alt="Oil Dropper">
+					</div>
+					<div class="home-hero__content">
+						<div class="home-hero__body">
+							<div class="home-hero__background home-hero__background--cover">
+								<img src="img/home/hero/2.png" alt="Facial Treatment">
+							</div>
+							<h1 class="home-hero__title">Where Skin Care Professionals</h1>
+							<ul class="home-hero__list home-hero__list--carousel">
+								<li>Thrive</li>
+								<li>Succeed</li>
+								<li>Grow</li>
+							</ul>
+						</div>
+						<div class="home-hero__link link link--bigger-size">
+							<a href="/signup">Start Thriving</a>
+						</div>
+						<div class="home-hero__pricing">
+							<a href="#membership-section">See Pricing</a>
+						</div>
+					</div>
+					<div class="home-hero__image home-hero__image--contain home-hero__image--right">
+						<img src="img/home/hero/2.png" alt="Facial Treatment">
+					</div>
+				</div>
+			</section>
+			<section class="main__choose choose">
+				<div class="choose__container">
+					<div class="choose__body choose__body--margin-top">
+						<div
+							class="choose__section-header section-header section-header--margin-center section-header--center">
+							<h2 class="section-header__title section-header__title--margin-bottom">Why Choose ASCP</h2>
+							<div class="section-header__text">
+								<p>ASCP has helped more than 40,000 estheticians build careers they're proud of. With a
+									membership
+									that offers trusted
+									insurance, expert education, and unwavering support.</p>
+							</div>
+						</div>
+					</div>
+					<div class="choose__five-cards five-cards">
+						<div class="five-cards__row row g-2 justify-content-center cards-left-align-last">
+							<article class="five-cards__col col-12 col-sm-6 col-lg-4">
+								<div class="five-cards__image five-cards__image--contain">
+									<i aria-hidden="true" class="fa-sharp fa-light fa-shield-check ico-coral ico-45"></i>
+								</div>
+								<div class="five-cards__body">
+									<h3 class="five-cards__title">Insurance</h3>
+									<div class="five-cards__text">
+										<p>Insuring against the risks you can't ignore.</p>
+									</div>
+								</div>
+								<ul class="five-cards__list">
+									<li>$6 million in <em>individual</em> liability insurance</li>
+									<li>Advanced Esthetics Insurance and Business Personal Property (BPP) options available</li>
+									<li>Coverage in all 50 states</li>
+								</ul>
+							</article>
+							<article class="five-cards__col col-12 col-sm-6 col-lg-4">
+								<div class="five-cards__image five-cards__image--contain">
+									<i class="fa-sharp fa-light fa-laptop ico-coral ico-45" aria-hidden="true"></i>
+								</div>
+								<div class="five-cards__body">
+									<h3 class="five-cards__title">Education</h3>
+									<div class="five-cards__text">
+										<p>Education that moves your career forward</p>
+									</div>
+								</div>
+								<ul class="five-cards__list">
+									<li>Print and digital magazine subscription to the award-winning <em>ASCP Skin Deep</em>
+										magazine</li>
+									<li>400+ on-demand webinars and videos</li>
+									<li>ASCP Career and Business Toolkits, ASCP SkinPro, ASCP Esty Talk podcast, and more</li>
+								</ul>
+							</article>
+						</div>
+						<div class="five-cards__row row g-2 justify-content-center cards-left-align-last">
+							<article class="five-cards__col col-12 col-sm-6 col-lg-4">
+								<div class="five-cards__image five-cards__image--contain">
+									<i class="fa-sharp fa-light fa-sparkles ico-coral ico-45" aria-hidden="true"></i>
+								</div>
+								<div class="five-cards__body">
+									<h3 class="five-cards__title">Career Support</h3>
+									<div class="five-cards__text">
+										<p>Run your skin care business like a pro</p>
+									</div>
+								</div>
+								<ul class="five-cards__list">
+									<li>Business planning resources and Career Toolkits to help you hone your craft</li>
+									<li>Free online scheduling and more with the ASCP Edition of PocketSuite</li>
+									<li>More than 50 member discounts</li>
+								</ul>
+							</article>
+							<article class="five-cards__col col-12 col-sm-6 col-lg-4">
+								<div class="five-cards__image five-cards__image--contain">
+									<i class="fa-sharp fa-light fa-messages ico-coral ico-45" aria-hidden="true"></i>
+								</div>
+								<div class="five-cards__body">
+									<h3 class="five-cards__title">Community</h3>
+									<div class="five-cards__text">
+										<p>Build your career with a community that supports you</p>
+									</div>
+								</div>
+								<ul class="five-cards__list">
+									<li>Connect with more than 40,000 estheticians committed to growth and success.</li>
+									<li>Share insights, experiences, and career-building advice with peers.</li>
+									<li>Join in-person and online events to help you grow stronger together.</li>
+								</ul>
+							</article>
+							<article class="five-cards__col col-12 col-sm-6 col-lg-4">
+								<div class="five-cards__image five-cards__image--contain">
+									<i class="fa-sharp fa-light fa-spa ico-coral ico-45" aria-hidden="true"></i>
+								</div>
+								<div class="five-cards__body">
+									<h3 class="five-cards__title">Advocacy</h3>
+									<div class="five-cards__text">
+										<p>Your voice matters. We make sure it's heard.</p>
+									</div>
+								</div>
+								<ul class="five-cards__list">
+									<li>ASCP's Government Relations team advocates for estheticians at the state and national
+										levels.</li>
+									<li>Stay informed and empowered with our easy-to-use Legislative Toolkit.</li>
+									<li>Get expert guidance on advocacy—and learn how to use your voice to shape the future of
+										the skin care industry.</li>
+								</ul>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__community community">
+				<div class="community__container">
+					<div class="community__section-header section-header section-header--center">
+						<h2 class="section-header__title section-header__title--margin-bottom">Hear from Our Community</h2>
+						<div class="section-header__text">
+							<p>See how skin care pros are achieving career success with ASCP</p>
+						</div>
+					</div>
+					<div class="community__swiper-community swiper-community swiper mySwiper">
+						<ul class="swiper-community__items swiper-wrapper">
+							<li class="swiper-community__item swiper-slide">
+								<div class="swiper-community__body">
+									<div class="swiper-community__image swiper-community__image--contain">
+										<img src="img/sections/community/1.png" alt="Nikki T">
+									</div>
+									<div class="swiper-community__content">
+										<div class="swiper-community__quote"><i class="fa-solid fa-quote-right"></i></div>
+										<h3 class="swiper-community__title">Exceeds all expectations</h3>
+										<div class="swiper-community__text">
+											<p>After being with them for 8 years, I can truly say they have amazing customer
+												service,
+												robust resources, an optimized
+												and easy to use platform, and maximum coverage for an amazing price. Can't say
+												enough
+												positive things about ASCP.</p>
+										</div>
+										<div class="swiper-community__author">Nikki T</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-community__item swiper-slide">
+								<div class="swiper-community__body">
+									<div class="swiper-community__image swiper-community__image--contain">
+										<img src="img/sections/community/2.jpg" alt="Julie H">
+									</div>
+									<div class="swiper-community__content">
+										<div class="swiper-community__quote"><i class="fa-solid fa-quote-right"></i></div>
+										<h3 class="swiper-community__title">I'm yours until I'm old and grey!</h3>
+										<div class="swiper-community__text">
+											<p>I've been a member for many years and I have never had an issue or complaint of any
+												kind. Customer service is
+												outstanding and it's very clear that they truly appreciate my business… I will be a
+												happy client until I retire!</p>
+										</div>
+										<div class="swiper-community__author">Julie H</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-community__item swiper-slide">
+								<div class="swiper-community__body">
+									<div class="swiper-community__image swiper-community__image--contain">
+										<img src="img/sections/community/3.jpg" alt="Marie K">
+									</div>
+									<div class="swiper-community__content">
+										<div class="swiper-community__quote"><i class="fa-solid fa-quote-right"></i></div>
+										<h3 class="swiper-community__title">I love being a part of ASCP! The only way to go!</h3>
+										<div class="swiper-community__text">
+											<p>I love being a part of ASCP. I own a small business and they were able to cover me
+												with
+												insurance for all my needs. I
+												feel much more comfortable having coverage through someone who knows and understands
+												the industry. I also love all the
+												wonderful resources they provide to professionals. I have been able to utilize so
+												many
+												and I absolutely LOVE my
+												magazine!</p>
+										</div>
+										<div class="swiper-community__author">Marie K</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-community__item swiper-slide">
+								<div class="swiper-community__body">
+									<div class="swiper-community__image swiper-community__image--contain">
+										<img src="img/sections/community/4.jpg" alt="Jamie H">
+									</div>
+									<div class="swiper-community__content">
+										<div class="swiper-community__quote"><i class="fa-solid fa-quote-right"></i></div>
+										<h3 class="swiper-community__title">Great insurance for the beauty industry</h3>
+										<div class="swiper-community__text">
+											<p>Great insurance for the beauty industry. They make renewals easy. Their prices are
+												reasonable. Also, their website has
+												tons of resources and tools for beauty professionals. I've needed their customer
+												service and it was easy and the staff
+												is always friendly and knowledgeable. I highly recommend ASCP.</p>
+										</div>
+										<div class="swiper-community__author">Jamie H</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-community__item swiper-slide">
+								<div class="swiper-community__body">
+									<div class="swiper-community__image swiper-community__image--contain">
+										<img src="img/sections/community/5.jpg" alt="Brittany W">
+									</div>
+									<div class="swiper-community__content">
+										<div class="swiper-community__quote"><i class="fa-solid fa-quote-right"></i></div>
+										<h3 class="swiper-community__title">Perfect for beauty professionals!</h3>
+										<div class="swiper-community__text">
+											<p>So far, I'm loving the experience! It's so much more than skin care insurance, it's
+												literally a portal filled with
+												information you need to be successful in the beauty industry.</p>
+										</div>
+										<div class="swiper-community__author">Brittany W</div>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-community__item swiper-slide">
+								<div class="swiper-community__body">
+									<div class="swiper-community__image swiper-community__image--contain">
+										<img src="img/sections/community/6.jpg" alt="Ximena J.">
+									</div>
+									<div class="swiper-community__content">
+										<div class="swiper-community__quote"><i class="fa-solid fa-quote-right"></i></div>
+										<h3 class="swiper-community__title">I love being a part of ASCP! The only way to go!</h3>
+										<div class="swiper-community__text">
+											<p>I love being a part of ASCP. I own a small business and they were able to cover me
+												with
+												insurance for all my needs. I
+												feel much more comfortable having coverage through someone who knows and understands
+												the industry. I also love all the
+												wonderful resources they provide to professionals. I have been able to utilize so
+												many
+												and I absolutely LOVE my
+												magazine!</p>
+										</div>
+										<div class="swiper-community__author">Ximena J., 2024 Esty of the Year</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="swiper-community__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="main__membership membership">
+				<div class="membership__container">
+					<div class="membership__body membership__body--yearly">
+						<div class="membership__content-membership content-membership">
+							<div class="content-membership__section-header section-header">
+								<h2 class="section-header__title">The Only Membership Built to Elevate Your Skin Care Career
+								</h2>
+								<div class="section-header__text">
+									<p>Invest in your success for just $259/year. ASCP gives you everything you need to succeed,
+										all
+										in one membership.</p>
+								</div>
+							</div>
+							<div class="content-membership__range">
+								<span class="content-membership__plan content-membership__plan--monthly">Monthly</span>
+								<span class="content-membership__line"></span>
+								<span class="content-membership__plan content-membership__plan--yearly">Yearly</span>
+								<div class="content-membership__discount">6% OFF</div>
+							</div>
+						</div>
+						<div class="membership__plan-membership plan-membership">
+							<div class="plan-membership__top">
+								<div class="plan-membership__plan">
+									<div class="plan-membership__text">
+										<p><strong>Professional</strong></p>
+										<p>Esthetician</p>
+									</div>
+									<div class="plan-membership__price-block price-block">
+										<div class="price-block__body">
+											<div class="price-block__price price-block__price--month">
+												<b>$23</b>/month
+											</div>
+											<div class="price-block__price price-block__price--year">
+												<b>$259</b>/year
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<ul class="plan-membership__list">
+									<li><span><i class="fa-solid fa-check"></i></span>ASCP Skin Deep magazine</li>
+									<li><span><i class="fa-solid fa-check"></i></span>ASCP Skin Pro app</li>
+									<li><span><i class="fa-solid fa-check"></i></span>50+ member discounts</li>
+									<li><span><i class="fa-solid fa-check"></i></span>400+ on-demand courses</li>
+									<li><span><i class="fa-solid fa-check"></i></span>Liability Insurance</li>
+								</ul>
+							</div>
+							<div class="plan-membership__link link link--white">
+								<a href="#">Join Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__offer offer">
+				<div class="offer__container">
+					<div class="offer__section-header section-header section-header--center">
+						<h2 class="section-header__title section-header__title--margin-bottom">Discover What ASCP Has To Offer
+						</h2>
+						<div class="section-header__text">
+							<p>Start enjoying the benefits of ASCP membership today!</p>
+						</div>
+					</div>
+					<div class="offer__cards-offer cards-offer">
+						<div class="cards-offer__row cards-offer__row--first row">
+							<div class="cards-offer__col col-12 col-lg-6 px-md-4">
+								<div class="cards-offer__image cards-offer__image--cover">
+									<img src="img/sections/offer/1.png" alt="ASCP Book">
+								</div>
+							</div>
+							<div class="cards-offer__col col-12 col-lg-6 px-md-4">
+								<div class="cards-offer__section-header section-header">
+									<h3 class="section-header__title"><em>ASCP Skin Deep</em> magazine</h3>
+									<div class="section-header__text">
+										<p>Dive into the award-winning publication crafted exclusively for estheticians. ASCP Skin
+											Deep delivers cutting-edge
+											insights, expert advice, and the latest industry trends—right to your mailbox and
+											online.</p>
+									</div>
+									<div class="section-header__link link">
+										<a href="#">Start Reading</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="cards-offer__row cards-offer__row--second row">
+							<div class="cards-offer__col cards-offer__col--first col-12 col-md-6 col-xl-4 px-md-4">
+								<div class="cards-offer__section-header section-header">
+									<h3 class="section-header__title">ASCP Esty <br> Talk Podcast</h3>
+									<div class="section-header__text">
+										<p>Welcome to the podcast where no topic is off-limits and every conversation is packed
+											with value. From deep dives into
+											skincare ingredients and the science behind healthy.
+										</p>
+									</div>
+									<div class="section-header__link link">
+										<a href="#">Tune In</a>
+									</div>
+								</div>
+								<div class="cards-offer__image cards-offer__image--cover">
+									<img src="img/sections/offer/3.png" alt="ASCP Education">
+								</div>
+							</div>
+							<div class="cards-offer__col cards-offer__col--second col-12 col-md-6 col-xl-8 px-md-4">
+								<div class="cards-offer__image cards-offer__image--cover">
+									<img src="img/sections/offer/2.png" alt="ASCP Education">
+								</div>
+								<div class="cards-offer__section-header section-header">
+									<h3 class="section-header__title">Unlock Expert Esthetics Education</h3>
+									<div class="section-header__body">
+										<div class="section-header__text">
+											<p>From technique tutorials to business tips, our high-quality educational videos are
+												available 24/7—so you can
+												learn,
+												grow, and thrive on your schedule.
+											</p>
+										</div>
+										<div class="section-header__link link">
+											<a href="#">Access Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main__choose choose choose--trust choose--margin-bottom">
+				<div class="choose__container">
+					<div class="choose__body">
+						<div class="choose__section-header section-header">
+							<h2 class="section-header__title section-header__title--margin-bottom">Why Thousands of
+								Estheticians Trust ASCP</h2>
+							<div class="section-header__text">
+								<p>At ASCP, we believe estheticians deserve more than just liability coverage—they deserve a
+									partnership. For over 20
+									years, we've empowered skin care professionals with the confidence, support, and resources to
+									grow thriving careers.
+									From industry-leading protection to expert education and practical business tools.</p>
+							</div>
+							<div class="section-header__link link">
+								<a href="#">Become a member</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top-section top-section">
+					<div class="top-section__body">
+						<h2 class="top-section__title">Subscribe <br> to ASCP Emails</h2>
+						<div class="top-section__text">
+							<p>Stay informed about the latest news</p>
+						</div>
+						<form method="GET" enctype="multipart/form-data" action="#" class="top-section__form">
+							<input id="footer-input-email" type="email" placeholder="Enter your email address">
+							<button class="top-section__btn btn btn--submit" type="submit">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__columns">
+					<div class="footer__column">
+						<h3 class="footer__title">Membership</h3>
+						<ul class="footer__list">
+							<li><a href="/">Professionals</a></li>
+							<li><a href="/students">Students</a></li>
+							<li><a href="/educators">Educators</a></li>
+							<li><a href="/employers">Employers</a></li>
+							<li><a href="/refer-a-friend">Refer a Friend</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Liability Insurance</h3>
+						<ul class="footer__list">
+							<li><a href="/liability-insurance-estheticians">Esthetician Insurance</a></li>
+							<li><a href="/ami">Advanced Esthetics Insurance</a></li>
+							<li><a href="/bpp-optional-contents-coverage-your-business">Business Personal Property
+									Insurance</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Education</h3>
+						<ul class="footer__list">
+							<li><a href="/ascp-skin-deep-magazine"><em>ASCP Skin Deep</em> Magazine</a></li>
+							<li><a href="/podcasts">ASCP Esty Talk Podcast</a></li>
+							<li><a href="/industry-education">On-Demand Education</a></li>
+							<li><a href="/trade-shows-and-events">Trade shows and Events</a></li>
+							<li><a href="/updates/blog-posts">Skin Care Blog</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Resources</h3>
+						<ul class="footer__list">
+							<li><a href="https://jobs.ascpskincare.com/">ASCP Career Center</a></li>
+							<li><a href="/pocketsuite">Free Online Scheduling</a></li>
+							<li><a href="/students/schools">School Directory</a></li>
+							<li><a href="/career-toolkits">Career Resources and Toolkits</a></li>
+							<li><a href="/members/networking/state-board-info">State Board Information</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<h3 class="footer__title">Company</h3>
+						<ul class="footer__list">
+							<li><a href="/about">About ASCP</a></li>
+							<li><a href="/advertising-opportunities">Advertising Opportunities</a></li>
+							<li><a href="/terms-use">Terms of Use</a></li>
+							<li><a href="/copyright-policy">Copyright</a></li>
+							<li><a href="/privacy-policy">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<ul class="footer__social-list social-list">
+							<li>
+								<a aria-label="Go to Facebook ASCPskincare" href="https://www.facebook.com/ASCPskincare"
+									target="_blank"><i class="fa-brands fa-facebook"></i></a>
+							</li>
+							<li>
+								<a aria-label="Go to Linkedin ASCPskincare" href="https://www.linkedin.com/company/2384545/"
+									target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+							</li>
+							<li>
+								<a aria-label="Go to Instagram ASCPskincare" href="#" target="_blank"><i
+										class="fa-brands fa-instagram"></i></a>
+							</li>
+							<li>
+								<a aria-label="Go to YouTube ASCPskincare" href="https://www.youtube.com/c/Ascpskincare"
+									target="_blank"><i class="fa-brands fa-youtube"></i></a>
+							</li>
+						</ul>
+						<div class="footer__link footer__link--email"><a href="mailto:proper@email.com"
+								target="_blank">proper@email.com</a>
+						</div>
+						<div class="footer__link footer__link--phone"><a href="tel:8001234567" target="_blank">800-123
+								4567</a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://kit.fontawesome.com/f8eacd1ba9.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

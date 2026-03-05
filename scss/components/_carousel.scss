@@ -1,0 +1,43 @@
+.home-hero__list--carousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	inline-size: 100%;
+	block-size: 8.125rem;
+	list-style: none;
+	position: relative;
+	overflow: hidden;
+	font-weight: 400;
+	font-size: 9rem;
+	line-height: 0.76;
+	text-align: center;
+	color: var(--color-grey-70);
+	font-family: var(--font-family-second);
+	@media (max-width: 991.98px) {
+		font-size: 6.5rem; /* 104/16 */
+		line-height: 1.06;
+		block-size: 6.875rem;
+	}
+}
+
+.home-hero__list--carousel li {
+	position: absolute;
+	inset-block-start: 50%;
+	inset-inline-start: 50%;
+	transform: translate(-50%, -50%);
+	inline-size: 100%;
+	block-size: 100%;
+	opacity: 0;
+	transition: opacity 0.75s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-hero__list--carousel li.active {
+	opacity: 1;
+}
+
+.home-hero__list--carousel li.fade-out {
+	opacity: 0;
+}
