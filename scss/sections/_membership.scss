@@ -61,6 +61,7 @@
 		text-align: center;
 	}
 	&__section-header {
+		position: relative;
 		@media (min-width: 991.98px) {
 			margin-block-end: 3rem; /* 48/16 */
 		}

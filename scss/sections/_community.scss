@@ -7,6 +7,7 @@
 	// .community__container
 
 	&__container {
+		position: relative;
 	}
 
 	// .community__section-header
@@ -28,6 +29,31 @@
 		}
 		@media (max-width: 71.2488rem) and (min-width: 47.9988rem) {
 			max-inline-size: 46.5625rem;
+		}
+	}
+	&__picture {
+		position: absolute;
+		inset-inline-start: 20.38%; /* 300/1472 */
+		inset-block-end: -18.75rem;
+		inline-size: 24.25rem;
+		aspect-ratio: 435 / 343;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 1s;
+		&.animate {
+			inset-block-end: -12.5rem;
+			opacity: 1;
+			visibility: visible;
+		}
+		@media (max-width: 479.98px) {
+			inset-block-end: -15.625rem;
+			inline-size: 18.75rem;
+			inset-inline-start: 5%;
+			&.animate {
+				inset-block-end: -9.375rem;
+				opacity: 1;
+				visibility: visible;
+			}
 		}
 	}
 }

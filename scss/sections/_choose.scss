@@ -5,12 +5,12 @@
 		.choose__body {
 			position: relative;
 			margin-block-end: -4.5625rem; /* -73/16 */
-			.choose__section-header {
-				max-inline-size: 44.75rem; /* 716/16 */
-			}
 			@media (min-width: 767.98px) {
 				padding-block: 4.25rem 4.5625rem;
 				padding-inline: 4.125rem; /* 66/16 */
+				.choose__section-header {
+					max-inline-size: 68.979%; /* 716/1038 */
+				}
 			}
 			@media (max-width: 767.98px) {
 				padding-block: 2.875rem; /* 46/16 */
@@ -33,6 +33,7 @@
 	// .choose__body
 
 	&__body {
+		position: relative;
 		margin-inline: auto;
 		max-inline-size: 73.125rem; /* 1170/16 */
 		border-radius: 1.5625rem; /* 25/16 */
@@ -47,6 +48,33 @@
 				margin-block-start: -1.5rem; /* 24/16 */
 			}
 			margin-block-end: 1rem; /* 16/16 */
+		}
+	}
+
+	&__picture {
+		position: absolute;
+		aspect-ratio: 590 / 875;
+		transition: all 1s;
+		opacity: 0;
+		@media (min-width: 767.98px) {
+			inset-block-start: 0;
+			transform: translateY(-15.143%);
+			inset-inline-end: -20px;
+			inline-size: 50.428%; /* 590/1170 */
+		}
+		@media (max-width: 767.98px) {
+			inset-block-start: -4.125rem;
+			inline-size: 19.875rem; /* 318/16 */
+			inset-inline-end: -151px;
+		}
+		&.animate {
+			opacity: 1;
+			@media (min-width: 767.98px) {
+				transform: translateY(-25.143%);
+			}
+			@media (max-width: 767.98px) {
+				inset-block-start: -8.125rem;
+			}
 		}
 	}
 
@@ -77,6 +105,7 @@
 	// .five-cards__col
 
 	&__col {
+		position: relative;
 		max-inline-size: 22.5rem; /* 360/16 */
 		flex: auto;
 		border: 2px solid var(--color-orange-10);
@@ -142,6 +171,34 @@
 				aspect-ratio: 1;
 				background: var(--color-purple-80);
 				border-radius: 50%;
+			}
+		}
+	}
+
+	// .five-cards__picture
+
+	&__picture {
+		position: absolute;
+		inset-block-start: -6.25rem;
+		inset-inline-end: -11.625rem;
+		inline-size: 24.8125rem;
+		aspect-ratio: 397 / 312;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 1s;
+		&.animate {
+			inset-block-start: -12.5rem;
+			opacity: 1;
+			visibility: visible;
+		}
+		@media (max-width: 1183.98px) {
+			inline-size: 12.5rem;
+			inset-block-start: 0;
+			inset-inline-end: -4.375rem;
+			&.animate {
+				inset-block-start: -3.125rem;
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 	}

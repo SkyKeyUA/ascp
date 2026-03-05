@@ -689,13 +689,13 @@ input:focus {
   -webkit-margin-after: -4.5625rem;
           margin-block-end: -4.5625rem; /* -73/16 */
 }
-.choose--margin-bottom .choose__body .choose__section-header {
-  max-inline-size: 44.75rem; /* 716/16 */
-}
 @media (min-width: 767.98px) {
   .choose--margin-bottom .choose__body {
     padding-block: 4.25rem 4.5625rem;
     padding-inline: 4.125rem; /* 66/16 */
+  }
+  .choose--margin-bottom .choose__body .choose__section-header {
+    max-inline-size: 68.979%; /* 716/1038 */
   }
 }
 @media (max-width: 767.98px) {
@@ -718,6 +718,7 @@ input:focus {
   }
 }
 .choose__body {
+  position: relative;
   margin-inline: auto;
   max-inline-size: 73.125rem; /* 1170/16 */
   border-radius: 1.5625rem; /* 25/16 */
@@ -740,6 +741,45 @@ input:focus {
 .choose__body--margin-top {
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem; /* 16/16 */
+}
+.choose__picture {
+  position: absolute;
+  aspect-ratio: 590/875;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 0;
+}
+@media (min-width: 767.98px) {
+  .choose__picture {
+    inset-block-start: 0;
+    -webkit-transform: translateY(-15.143%);
+        -ms-transform: translateY(-15.143%);
+            transform: translateY(-15.143%);
+    inset-inline-end: -20px;
+    inline-size: 50.428%; /* 590/1170 */
+  }
+}
+@media (max-width: 767.98px) {
+  .choose__picture {
+    inset-block-start: -4.125rem;
+    inline-size: 19.875rem; /* 318/16 */
+    inset-inline-end: -151px;
+  }
+}
+.choose__picture.animate {
+  opacity: 1;
+}
+@media (min-width: 767.98px) {
+  .choose__picture.animate {
+    -webkit-transform: translateY(-25.143%);
+        -ms-transform: translateY(-25.143%);
+            transform: translateY(-25.143%);
+  }
+}
+@media (max-width: 767.98px) {
+  .choose__picture.animate {
+    inset-block-start: -8.125rem;
+  }
 }
 .choose__section-header {
   max-inline-size: 49.4375rem; /* 791/16 */
@@ -767,6 +807,7 @@ input:focus {
   gap: 2.5rem; /* 40/16 */
 }
 .five-cards__col {
+  position: relative;
   max-inline-size: 22.5rem; /* 360/16 */
   -webkit-box-flex: 1;
       -ms-flex: auto;
@@ -839,6 +880,34 @@ input:focus {
   background: var(--color-purple-80);
   border-radius: 50%;
 }
+.five-cards__picture {
+  position: absolute;
+  inset-block-start: -6.25rem;
+  inset-inline-end: -11.625rem;
+  inline-size: 24.8125rem;
+  aspect-ratio: 397/312;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.five-cards__picture.animate {
+  inset-block-start: -12.5rem;
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 1183.98px) {
+  .five-cards__picture {
+    inline-size: 12.5rem;
+    inset-block-start: 0;
+    inset-inline-end: -4.375rem;
+  }
+  .five-cards__picture.animate {
+    inset-block-start: -3.125rem;
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
 .community {
   background: var(--color-white-90);
@@ -848,6 +917,9 @@ input:focus {
   .community {
     padding-block: 6.375rem 2.5rem;
   }
+}
+.community__container {
+  position: relative;
 }
 @media (min-width: 767.98px) {
   .community__section-header {
@@ -869,6 +941,34 @@ input:focus {
 @media (max-width: 71.2488rem) and (min-width: 47.9988rem) {
   .community__swiper-community {
     max-inline-size: 46.5625rem;
+  }
+}
+.community__picture {
+  position: absolute;
+  inset-inline-start: 20.38%; /* 300/1472 */
+  inset-block-end: -18.75rem;
+  inline-size: 24.25rem;
+  aspect-ratio: 435/343;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.community__picture.animate {
+  inset-block-end: -12.5rem;
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 479.98px) {
+  .community__picture {
+    inset-block-end: -15.625rem;
+    inline-size: 18.75rem;
+    inset-inline-start: 5%;
+  }
+  .community__picture.animate {
+    inset-block-end: -9.375rem;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -915,6 +1015,9 @@ input:focus {
   .content-membership {
     text-align: center;
   }
+}
+.content-membership__section-header {
+  position: relative;
 }
 @media (min-width: 991.98px) {
   .content-membership__section-header {
