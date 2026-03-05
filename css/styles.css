@@ -496,6 +496,10 @@ input:focus {
   border-radius: 3.125rem;
   min-inline-size: 10.125rem; /* 162/16 */
 }
+.btn--submit:hover {
+  background: var(--color-white);
+  color: var(--color-purple-80);
+}
 
 @media (max-width: 991.98px) {
   .menu-open body {
