@@ -5,7 +5,12 @@
 	color: var(--color-purple-80);
 	background-color: var(--color-white);
 	line-height: 1.35; /* 27/20 */
-	padding-block: 0.5rem 1.5rem;
+	@media (min-width: 479.98px) {
+		padding-block: 0.5rem 1.5rem;
+	}
+	@media (max-width: 479.98px) {
+		padding-block: 0.75rem 1.5rem;
+	}
 	// .header__container
 
 	&__container {
@@ -73,6 +78,7 @@
 			min-block-size: 5.625rem; /* 90/16 */
 		}
 		@media (max-width: 479.98px) {
+			min-block-size: 2.5625rem; /* 41/16 */
 			margin-block-end: 2.5rem; /* 40/16 */
 			.log-in {
 				font-size: 1rem; /* 16/16 */
