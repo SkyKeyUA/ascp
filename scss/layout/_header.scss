@@ -29,13 +29,16 @@
 	// .header__logo
 
 	&__logo {
+		aspect-ratio: 205 / 90;
+		a {
+			inline-size: 100%;
+			block-size: 100%;
+		}
 		@media (min-width: 479.98px) {
-			inline-size: 12.8125rem;
-			aspect-ratio: 205 / 90;
+			inline-size: 12.5rem; /* 200/16 */
 		}
 		@media (max-width: 479.98px) {
-			inline-size: 6.625rem;
-			aspect-ratio: 106 / 41;
+			inline-size: 8.75rem; /* 140/16 */
 		}
 	}
 
@@ -78,7 +81,7 @@
 			min-block-size: 5.625rem; /* 90/16 */
 		}
 		@media (max-width: 479.98px) {
-			min-block-size: 2.5625rem; /* 41/16 */
+			min-block-size: 3.8125rem; /* 61/16 */
 			margin-block-end: 2.5rem; /* 40/16 */
 			.log-in {
 				font-size: 1rem; /* 16/16 */

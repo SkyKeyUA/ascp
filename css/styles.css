@@ -1500,16 +1500,21 @@ main {
     grid-template-columns: auto 1fr;
   }
 }
+.header__logo {
+  aspect-ratio: 205/90;
+}
+.header__logo a {
+  inline-size: 100%;
+  block-size: 100%;
+}
 @media (min-width: 479.98px) {
   .header__logo {
-    inline-size: 12.8125rem;
-    aspect-ratio: 205/90;
+    inline-size: 12.5rem; /* 200/16 */
   }
 }
 @media (max-width: 479.98px) {
   .header__logo {
-    inline-size: 6.625rem;
-    aspect-ratio: 106/41;
+    inline-size: 8.75rem; /* 140/16 */
   }
 }
 .actions--tablet {
@@ -1538,7 +1543,7 @@ main {
 }
 @media (max-width: 479.98px) {
   .actions--tablet {
-    min-block-size: 2.5625rem; /* 41/16 */
+    min-block-size: 3.8125rem; /* 61/16 */
     -webkit-margin-after: 2.5rem;
             margin-block-end: 2.5rem; /* 40/16 */
   }
