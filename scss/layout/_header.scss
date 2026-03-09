@@ -174,6 +174,8 @@
 	}
 }
 .submenu {
+	font-size: 1.125rem; /* 18/16 */
+	line-height: 1.5;
 	@media (min-width: 991.98px) {
 		transition:
 			opacity 0.3s,
@@ -203,7 +205,7 @@
 	}
 	li a {
 		inline-size: 100%;
-		padding-block: 0.875rem;
+		padding-block: 0.5625rem;
 		padding-inline: 0.75rem; /* 12/16 */
 		background: var(--color-white);
 		transition:

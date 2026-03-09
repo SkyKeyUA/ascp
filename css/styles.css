@@ -247,7 +247,7 @@ input:focus {
   content: "";
   position: absolute;
   inset-block-start: -1.875rem; /* -30/16 */
-  inset-inline-start: -1.875rem; /* -30/16 */
+  inset-inline-end: 0;
   inline-size: 110%;
   block-size: 100%;
   background-color: var(--color-white);
@@ -1618,6 +1618,10 @@ main {
   }
 }
 
+.submenu {
+  font-size: 1.125rem; /* 18/16 */
+  line-height: 1.5;
+}
 @media (min-width: 991.98px) {
   .submenu {
     -webkit-transition: opacity 0.3s, visibility 0.3s;
@@ -1652,7 +1656,7 @@ main {
 }
 .submenu li a {
   inline-size: 100%;
-  padding-block: 0.875rem;
+  padding-block: 0.5625rem;
   padding-inline: 0.75rem; /* 12/16 */
   background: var(--color-white);
   -webkit-transition: background 0.3s, color 0.3s;

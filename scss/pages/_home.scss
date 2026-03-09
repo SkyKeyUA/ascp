@@ -130,7 +130,7 @@
 			content: "";
 			position: absolute;
 			inset-block-start: -1.875rem; /* -30/16 */
-			inset-inline-start: -1.875rem; /* -30/16 */
+			inset-inline-end: 0;
 			inline-size: 110%;
 			block-size: 100%;
 			background-color: var(--color-white);
