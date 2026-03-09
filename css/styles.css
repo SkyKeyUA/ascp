@@ -1501,7 +1501,7 @@ main {
   }
 }
 .header__logo {
-  aspect-ratio: 205/90;
+  aspect-ratio: 854/374;
 }
 .header__logo a {
   inline-size: 100%;
